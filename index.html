@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <img id="mymap-img" src="your-image.jpg" usemap="#mymap">
+  <map name="mymap">
+    <area shape="rect" coords="100,50,300,200" href="https://example.com/page1" alt="Region 1">
+    <area shape="rect" coords="400,100,700,350" href="https://example.com/page2" alt="Region 2">
+  </map>
+  <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@2.0.1/dist/imageMapResizer.min.js"></script>
+  <script>
+    imageMapResize('mymap');
+  </script>
+</body>
+</html>   
